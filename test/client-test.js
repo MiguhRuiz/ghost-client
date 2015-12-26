@@ -4,7 +4,8 @@ var ghost = require('../')
 var Client = require('../lib/client')
 
 var url = 'http://api.ghost.test'
-var token = 'Bearer 0X0X0X0X0X0X0X0'
+var clientId = 'ghost-frontend'
+var clientSecret = 'catsarecool'
 
 test('should create a client', function (t) {
   t.ok(ghost.createClient, 'should exist')
@@ -16,11 +17,11 @@ test('should create a client', function (t) {
 })
 
 test('should list shows', function (t) {
-  var client = ghost.createClient({ endpoint: url, Authorization: token })
+  var client = ghost.createClient({ endpoint: url, clientId: 'ghost-frontend', clientSecret: clientSecret })
   t.equals(typeof client.posts, 'function', 'should be a function')
 
   nock(url + '/ghost/api/v0.1')
-      .get('/posts')
+      .get('/posts' + '?' + 'clientId=' + clientId + '&clientSecret=' + clientSecret)
       .reply('200', [])
 
   client.posts(function (err, posts) {
