@@ -13,8 +13,12 @@ $ npm install ghost-client --save
 
 ```js
 var ghost = require('ghost-client')
-var Client = ghost.createClient({
-  "Authorization": "Bearer 0X0X0X0X0X0X0X0"
+var url = 'http://my-ghost-blog.com'
+var clientId = 'ghost-frontend' // It has to be 'ghost-frontend' or 'ghost-admin'
+var client = ghost.createClient({
+  endpoint: url,
+  clientId: clientId,
+  clientSecret: clientSecret 
 })
 
 Client.posts(function (err, posts) {
