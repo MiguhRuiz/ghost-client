@@ -1,5 +1,7 @@
+var Client = require('./lib/client.js')
+
 function createClient (options) {
-  // body...
+  return new Client(options)
 }
 
 module.exports = {
