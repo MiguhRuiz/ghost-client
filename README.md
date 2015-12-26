@@ -2,6 +2,9 @@
 
 A ghost client to get some data from the API.
 
+[![NPM](https://nodei.co/npm/ghost-client.png)](https://nodei.co/npm/ghost-client/)
+
+
 ## Install
 
 $ npm install ghost-client --save
