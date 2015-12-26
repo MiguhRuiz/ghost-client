@@ -1,4 +1,4 @@
-function createClient(options) {
+function createClient (options) {
   // body...
 }
 
