@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/Galaxy42/ghost-client#readme",
   "dependencies": {
-    "client-request": "^1.0.1",
     "nock": "^3.6.0",
     "querystring": "^0.2.0",
+    "request": "^2.67.0",
     "standard": "^5.4.1",
     "tap-spec": "^4.1.1",
     "tape": "^4.4.0"
