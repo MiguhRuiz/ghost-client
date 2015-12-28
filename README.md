@@ -16,6 +16,7 @@ This module connects to your Ghost blog and gives you a list of what you need, p
 - [Available resources and methods](#available-resources-and-methods)
 	- [Client.posts()](#clientposts)
 	- [Client.tags()](#clienttags)
+	- [Client.users()](#clientusers)
 - [License MIT](#license-mit)
 
 ## Installation
@@ -82,6 +83,19 @@ Brings tags list from a Ghost Blog.
 Client.tags(function (err, tags) {
   if(err) console.log(err)
   console.log(tags)
+})
+
+```
+
+#### Client.users()
+
+Brings users list from a Ghost Blog.
+
+```js
+
+Client.users(function (err, users) {
+  if(err) console.log(err)
+  console.log(users)
 })
 
 ```
