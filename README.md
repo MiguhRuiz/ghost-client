@@ -8,18 +8,15 @@ This module connects to your Ghost blog and gives you a list of what you need, p
 
 <center>[![NPM](https://nodei.co/npm/ghost-client.png)](https://nodei.co/npm/ghost-client/)</center>
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+## Table of Concepts
 
-- [ghost-client          [![](https://circleci.com/gh/Galaxy42/ghost-client/tree/master.png?circle-token=:circle-token)](https://circleci.com/gh/Galaxy42/ghost-client)](#ghost-client-httpscirclecicomghgalaxy42ghost-clienttreemasterpngcircle-tokencircle-tokenhttpscirclecicomghgalaxy42ghost-client)
-	- [Installation](#installation)
-	- [Authentication: Client Authentication](#authentication-client-authentication)
-	- [Authentication: User Authentication](#authentication-user-authentication)
-	- [Available resources and methods](#available-resources-and-methods)
-			- [Client.posts()](#clientposts)
-			- [Client.tags()](#clienttags)
-	- [License MIT](#license-mit)
-
-<!-- /TOC -->
+- [Installation](#installation)
+- [Authentication: Client Authentication](#authentication-client-authentication)
+- [Authentication: User Authentication](#authentication-user-authentication)
+- [Available resources and methods](#available-resources-and-methods)
+	- [Client.posts()](#clientposts)
+	- [Client.tags()](#clienttags)
+- [License MIT](#license-mit)
 
 ## Installation
 
