@@ -1,6 +1,6 @@
 ## ghost-client          ![](https://circleci.com/gh/Galaxy42/ghost-client/tree/master.png?circle-token=:circle-token)  ![](https://circleci.com/gh/Galaxy42/ghost-client/tree/master.png?style=shield&circle-token=:circle-token)
 
-
+**We're currently updating the documentation, please wait to see the full documentation**
 A ghost client to get some data from the API.
 
 [![NPM](https://nodei.co/npm/ghost-client.png)](https://nodei.co/npm/ghost-client/)
