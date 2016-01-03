@@ -29,7 +29,7 @@ test('should list posts using client authentication', function (t) {
       .get('/posts' + '?' + 'clientId=' + clientId + '&clientSecret=' + clientSecret)
       .reply('200', [])
 
-  client.posts(function (err, posts) {
+  client.posts({}, function (err, posts) {
     t.error(err, 'should not be an error')
     t.ok(Array.isArray(posts), 'should be an array')
     t.end()
@@ -48,7 +48,7 @@ test('should list posts using user authentication', function (t) {
     .get('/posts')
     .reply('200', [])
 
-  client.posts(function (err, posts) {
+  client.posts({}, function (err, posts) {
     t.error(err, 'should not be an error')
     t.ok(Array.isArray(posts), 'should be an array')
     t.end()
@@ -63,7 +63,7 @@ test('should list tags using client authentication', function (t) {
       .get('/tags' + '?' + 'clientId=' + clientId + '&clientSecret=' + clientSecret)
       .reply('200', [])
 
-  client.tags(function (err, tags) {
+  client.tags({}, function (err, tags) {
     t.error(err, 'should not be an error')
     t.ok(Array.isArray(tags), 'should be an array')
     t.end()
@@ -82,7 +82,7 @@ test('should list tags using user authentication', function (t) {
   .get('/tags')
   .reply('200', [])
 
-  client.tags(function (err, tags) {
+  client.tags({}, function (err, tags) {
     t.error(err, 'should not be an error')
     t.ok(Array.isArray(tags), 'should be an array')
     t.end()
@@ -98,7 +98,7 @@ test('should list users using client authentication', function (t) {
       .get('/users' + '?' + 'clientId=' + clientId + '&clientSecret=' + clientSecret)
       .reply('200', [])
 
-  client.users(function (err, users) {
+  client.users({}, function (err, users) {
     t.error(err, 'should not be an error')
     t.ok(Array.isArray(users), 'should be an array')
     t.end()
@@ -117,7 +117,7 @@ test('should list users using user authentication', function (t) {
   .get('/users')
   .reply('200', [])
 
-  client.users(function (err, users) {
+  client.users({}, function (err, users) {
     t.error(err, 'should not be an error')
     t.ok(Array.isArray(users), 'should be an array')
     t.end()
