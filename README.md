@@ -17,6 +17,7 @@ This module connects to your Ghost blog and gives you a list of what you need, p
 	- [Client.posts()](#clientposts)
 	- [Client.tags()](#clienttags)
 	- [Client.users()](#clientusers)
+- [Adding parameters to available resources and methods](#adding-parameters-to-avaible-resources-and-methods)
 - [License MIT](#license-mit)
 
 ## Installation
@@ -68,7 +69,7 @@ Brings posts list from a Ghost Blog.
 
 ```js
 
-Client.posts(function (err, posts) {
+Client.posts({}, function (err, posts) {
   if (err) console.log(err)
   console.log(posts)
 })
@@ -80,7 +81,7 @@ Brings tags list from a Ghost Blog.
 
 ```js
 
-Client.tags(function (err, tags) {
+Client.tags({}, function (err, tags) {
   if(err) console.log(err)
   console.log(tags)
 })
@@ -93,9 +94,25 @@ Brings users list from a Ghost Blog.
 
 ```js
 
-Client.users(function (err, users) {
+Client.users({}, function (err, users) {
   if(err) console.log(err)
   console.log(users)
+})
+
+```
+
+## Adding parameters to available resources and methods
+
+If you want to add a parameter when you run a function, for example you want to use the `limit` parameter to limit the resources that you want to get, simply write them into the array before the callback.
+
+> [Check the Ghost API Docs to learn more about parameters](http://api.ghost.org/docs/parameters)
+
+```js
+
+// Example using the 'limit' parameter to get posts
+Client.posts({ limit: 4 }, function (err, posts) {
+	if(err) console.log(err)
+	console.log(posts)
 })
 
 ```
