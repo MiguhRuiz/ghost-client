@@ -119,7 +119,7 @@ Client.posts({ limit: 4 }, function (err, posts) {
 
 ## License MIT
 
-Copyright (c) 2015 - Miguel Ruiz
+Copyright (c) 2015-2016 - Miguel Ruiz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
