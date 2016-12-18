@@ -1,9 +1,1 @@
-var Client = require('./lib/client.js')
-
-function createClient (options) {
-  return new Client(options)
-}
-
-module.exports = {
-  createClient: createClient
-}
+// This is where the module should be initialized
