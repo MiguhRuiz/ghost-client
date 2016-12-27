@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/Galaxy42/ghost-client#readme",
   "dependencies": {
-    "co": "^4.6.0",
     "isomorphic-fetch": "^2.2.1",
     "request": "^2.67.0"
   },
